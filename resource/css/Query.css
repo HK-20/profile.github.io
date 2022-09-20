@@ -1,0 +1,438 @@
+/*
+Responsive desining 
+ @media (max-width: 82em){
+ 
+ }
+/* 
+screen of tab\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+*/
+@media (max-width: 63em){
+  .head-class{
+    width: 40rem;
+    
+  }
+  
+  .name{
+    font-size: 250%;
+    letter-spacing: 6px; 
+    word-spacing: 10px;
+    line-height: 4rem;
+  }
+  /* nav bar */
+  .menu-right a:hover{
+    text-decoration: underline;
+    text-decoration-color: goldenrod; 
+  }
+  
+
+  /*page2*/
+  .page2{
+    padding: 1% 2%;
+  }
+  .page2-r{
+    padding: 10% 6%;
+  }
+  .About{
+    margin-bottom: 12%;
+    
+  }
+  .summary, .edu-det{
+    font-size: 80%;
+   
+  }
+  .lang{
+    margin-top: 10%;
+    font-size: 1rem;
+  }
+  .lang-ss, .inte-list {
+     font-size: 90%;
+  }
+  /* page3*/
+  .page3-l{
+    padding-left: 2%;
+  }
+  .mys{
+    font-size: 2.5rem;
+    margin-left: 8%;
+    margin-top: 10%;
+  }
+  .subline3{
+    font-size: 90%;
+  }
+  .page3-ld{
+    font-size: 90%;
+  }
+  .page3-r{
+    padding-left: 0%;
+    padding-top: 8%;
+  }
+  /*page4*/
+  .get{
+    width: 80%;
+    height: 80%;
+  }
+  .get-in-h{
+    font-size: 200%;
+
+  }
+  .get-in-p{
+    line-height: 1.4rem;
+    letter-spacing: 1.5px;
+    word-spacing: 2px;
+    font-size: 80%;
+  }
+ /*
+ login 
+ */
+  .formbx{
+    width: 70%;
+    margin-top: 2rem;
+  }
+
+  .formbx h2{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  .inputbx {
+    margin-bottom: 1rem;
+  }
+  .inputbx span{
+    font-size: 80%;
+  }
+  .inputbx input{
+    font-size: 80%;
+    padding: 5px 10px;
+  }
+
+
+}
+
+@media (max-width: 51em){
+  /* page1 */
+  
+  .head-class{
+    width: 32rem;
+    
+  }
+  
+  .sticky{
+    width: 100%;
+  }
+  /* new feture of menu icon */
+  
+  .menu-right{
+    background: rgb(233, 237, 240);
+    float: unset;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transform: translateX(100%);
+
+
+    transition: all 0.8s ease-in;
+    /* hiding nav-menu animation*/
+    /* disply don't allow animations */
+    /* visually */
+    opacity: 0%;
+    /* making it unaccessible to mouse & keybourd */
+    pointer-events: none;
+    /* hide it from screen reader */
+    visibility: hidden;
+  }
+
+
+  .unhide .menu-right{
+    /* hiding nav-menu animation*/
+    /* disply don't allow animations */
+    /* visually */
+    opacity: 100%;
+    /* making it unaccessible to mouse & keybourd */
+    pointer-events: auto;
+    /* hide it from screen reader */
+    visibility: visible;
+    
+    transform: translateX(0%);
+   
+  }
+  .unhide .menu-butt[name="del"]{
+    display: block;
+    background: transparent;
+    margin-top: 25%;
+    
+  }
+  .unhide .menu-butt[name="menu"]{
+    display: none;
+    background: transparent;
+  }
+  .main-menu{
+    
+    margin-top: 0%;
+    height: 100vh;
+    width: 100%;
+    font-size: 150%;
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    justify-content: center;
+    text-align: center;
+    
+  }
+
+  
+
+  .mob{
+    float: right;
+    position: relative;
+    z-index: 1;
+    margin-right: 10px;
+  }
+  .menu-butt[name="menu"]{
+    display: block;
+    background: none;
+    
+  }
+  .main-menu:link,
+  .main-menu:visited{
+    font-size: 3%;
+
+  }
+
+  .main-menu:hover{
+    cursor: pointer;
+    
+  }
+  
+  .btn:hover {
+    
+    background-color: rgb(255, 255, 255);
+    
+    color: #ff4584;
+  }
+  
+  /* page2 */
+
+  .page2-r,.page2-l{
+    padding-top: 30%;
+    
+  }
+  
+  .summary{
+    line-height: 1.2rem;
+  }
+  .lang{
+    margin-top: 55%;
+  }
+  .inte{
+    margin-top: 40%;
+  }
+  /* page3 */
+
+  .page3{
+    display: block;
+  }
+  .page3-l{
+    height: 40vh;
+    width: 100%;
+  }
+  .page3-r{
+    height: 50%;
+    width: 100%;
+  }
+  .page3-lt{
+    justify-content: center;
+    text-align: center;
+  }
+
+  .page3-ld{
+    margin-top: 10%;
+  }
+  .subline3{
+    width: 100%;
+    margin-left: 5%;
+
+  }
+    .r-dis{
+        width: auto;
+    }
+
+  .page3-r1{
+    justify-content: center;
+    text-align: center;
+  }
+  /* page 4 */
+
+  .page4{
+    display: block;
+  }
+  
+  .imgbx{
+    height: 40%;
+    width: 100%;
+  }
+  .contentbx{
+    height: 60%;
+    width: 100%;
+    align-items: unset;
+  }
+  .get-in-h{
+    justify-content: center;
+    text-align: center;
+    margin-left: 0%;
+    margin-top: 20%;
+    font-weight: 500;
+  }
+
+  .get-in-p{
+    width: 100%;
+  }
+  .inputbx{
+    margin-bottom: 1.8rem;
+  }
+  
+  /*
+  nav bar menu butten 
+  */
+  
+
+}
+
+@media (max-width: 30em){
+  
+  /* page1 */
+  .heading{
+    font-weight: 100;
+    margin-left: 4%;
+    font-size: 1.3rem;
+
+  }
+
+  .menu-butt{
+    height: 2.3rem;
+    width: auto;
+  }
+
+  .sticky{
+    height: 2.4rem;
+  }
+  .head-class{
+    width: 20rem;
+  }
+
+  .name{
+    font-size: 155%;
+    margin-left: 0%;
+    
+  }
+  
+  .main-li-btn{
+    
+    font-size: 80%;
+  }
+  .main-li-btn:hover{
+    background-color: rgb(255, 255, 255);
+    
+    color: #ff4584;
+  }
+
+  /* page 2 */
+
+  .page2{
+    display: block;
+    height: auto;
+  }
+  .page2-l,.page2-r{
+    height: 50%;
+    width: 100%;
+  }
+  .page2-r{
+    padding-top: 0%;
+  }
+  
+  .About{
+    font-size: 1.2rem;
+  }
+  
+  .summary, .edu-det{
+    font-size: 63%;
+  }
+
+  .lang, .inte{
+    margin-top: 15%;
+  }
+
+  .lang-ss, .inte-list {
+    font-size: 70%;
+  }
+/*page3 */
+
+  .mys{
+    font-size: 1.9rem;
+    font-weight: 500;
+  }
+
+  .subline3 {
+    font-size: 70%;
+  }
+
+  .page3-ld {
+    font-size: 70%; 
+  }
+
+  .page3-r{
+    grid-template-columns:repeat(2,1fr);
+    padding: 0%;
+    margin-bottom: -5%;
+  }
+  .r-pic{
+    height: 5rem;
+    width: 5rem;
+
+  }
+  .r-dis{
+    font-size: 80%;
+    width: unset;
+  }
+  .page3-r1 p{
+    text-align: center;
+  }
+
+
+  /* page4 */
+  .imgbx{
+    height: 30%;
+  }
+  .get{
+    width: 92%;
+
+  }
+
+  .get-in-h{
+    font-size: 1.9rem;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    margin-bottom: 3%;
+  }
+  
+  .get-in-p{
+    font-size: 64%;
+    line-height: 1.2rem;
+  }
+
+  .formbx h2 {
+    font-size: 1.4rem;
+  }
+  .loginto{
+    font-size: 1rem;
+  }
+  .inputbx{
+    margin-bottom: 1rem;
+  }
+
+  .formbx h3 {
+    margin: 5px 0px 10px;
+    font-size: 1rem;
+    
+  }
+}

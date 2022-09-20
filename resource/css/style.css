@@ -1,0 +1,566 @@
+/*
+ background: #1599db;
+ color: #607d8b;
+ background: #f53677;
+ color: #ff4584;
+ color: #fff;
+ red : rgb(190, 39, 39);
+*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    /*
+    scroll-behavior: smooth;
+    */
+    overflow-x: hidden;
+}
+
+body{
+    background-color: rgb(255, 253, 253); 
+    color: rgb(7, 7, 7);
+    font-family:'Overpass', sans-serif;
+   
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+   
+    overflow-x: hidden;
+}
+
+
+header{
+    
+    height: 100vh;
+    width: auto;
+    display: block;
+    background-image: url(../../img/gradienta-OzfD79w8ptA-unsplash.jpg);
+    
+    background-size: cover;
+     
+}
+ 
+ 
+.navbar{
+    position: relative;
+    width: 100%;
+    height: 3.5rem;
+    background-color: transparent;
+     
+}
+/*
+memu icon
+*/
+.menu-butt{
+    display: none;
+    height: 3.2rem;
+    width: auto;
+    border: none;
+}
+
+
+.menu-butt img{
+    width: 100%;
+    height: 100%; 
+    background-color: transparent;   
+}
+
+/* sticky navigation */
+.sticky{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3rem; 
+    z-index: 100;
+    background-color: rgb(70, 62, 62);
+    
+}
+
+.heading{
+    float: left;
+    margin-top:  12px;
+    margin-bottom: 0%;
+    margin-left: 60px;
+    font-size: 1.9rem;
+    color: #ff4584;
+    list-style-type: none;
+    justify-items: center;
+}
+
+.menu-right{
+    
+    display:inline-flex;
+    padding-top: 4px;
+    margin-right: 40px ;
+    justify-items: center; 
+    float: right;
+    box-sizing: border-box;
+    
+    list-style-type: none;
+
+}
+
+.main-li {
+    margin-left: 30px;
+    display: inline-block;
+    
+}
+.main-menu{
+   list-style: none;
+   margin-top: 10px;
+   padding: 0%;
+   
+}
+.main-li a{
+   text-decoration: none;
+   color: #f53677;
+    
+}
+
+.menu-right a:hover{
+    text-decoration: underline;
+    text-decoration-color: goldenrod; 
+}
+
+.menu-right a:active{
+   color:rgb(255, 255, 255); 
+}
+
+
+
+/*
+STAR EFFECT
+*/
+.effect {
+    height: 100vh;
+    position: relative;
+  } 
+
+  .github-corner:hover .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+  }
+  
+  @keyframes octocat-wave {
+    0%,
+    100% {
+      transform: rotate(0);
+    }
+    20%,
+    60% {
+      transform: rotate(-25deg);
+    }
+    40%,
+    80% {
+      transform: rotate(10deg);
+    }
+  }
+  
+  @media (max-width: 500px) {
+  
+    .github-corner:hover .octo-arm {
+      animation: none;
+    }
+    
+    .github-corner .octo-arm {
+      animation: octocat-wave 560ms ease-in-out;
+    }
+  }
+  
+
+
+.main{
+    
+    width: 80vh;
+    height: auto ;
+}
+
+.head-class{
+    position: absolute;
+    width: 57rem;
+    
+    top: 50%;
+    left: 43%;
+    transform: translate(-50% ,-50%);
+    
+    
+}
+.name{ 
+    position: relative;   
+    margin-left: 20px;
+    font-weight: 100;
+    font-size: 320%;
+    letter-spacing: 8px; 
+    word-spacing: 15px;
+    
+    color: #607d8b;
+    
+    line-height: 5rem;
+    font-style:italic;
+}
+
+.main-li-btn {
+    display: inline-block;
+    padding: 8px 50px;
+    font-weight: 400;
+    text-decoration: none;
+    background-color: transparent;
+    border-radius: 25px;
+    margin-top: 80px;
+    margin-left: 60px;
+    border: 1px solid  goldenrod;
+    color: rgb(70, 62, 62); 
+    text-align: center;
+    justify-content: center;  
+}
+
+.main-li-btn:hover{
+    background-color: #7d9aa8;
+    background-color: rgb(255, 255, 255);
+    color: rgb(190, 39, 39);
+    color: #ff4584;
+    
+}
+
+.main-li-btn:active{
+    background-color: #e681a2;
+}
+
+
+
+
+/*
+page2
+*/
+
+.page2{
+    width: 100%;
+    height: 100vh;
+    padding: 1% 8%;
+    display: inline-flex;
+    
+}
+
+
+.page2-l, .page2-r{
+    height: 100%;
+    width: 50%;
+    padding:10% 5% ;
+}  
+.About{
+    margin-bottom: 18%;
+    text-align: center;
+    font-size: 1.4rem;  
+}
+.summary{
+    margin-bottom: 5%;
+    
+    line-height: 1.5rem;
+    width: 110%;
+    margin-left: -5%;
+    color:#607d8b ;
+}
+
+.lang,.inte{
+    margin-top: 14%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.lang-ss{
+    display: block;
+    list-style-type: disc;
+    
+    color: #607d8b;
+    margin-top: 10%;
+    line-height: 1.5rem;
+   
+}
+
+.lang-ss h4{
+    list-style-type: disc;
+}
+.edu{
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom:10%;
+    
+}
+
+.edu-det{
+    color: #607d8b;
+    
+}
+
+.inter-li{
+    margin-top: 8%;
+}
+
+span{
+    color: rgb(168 34 34);
+    line-height: 1.6;
+    
+}
+.inte-list{
+    margin-top: 7%;
+    line-height: 1.5rem;
+    color: #607d8b;;
+}
+
+/* 
+page3   
+*/
+.page3{
+    width: 100%;
+    height: 100vh;
+    display: inline-flex;
+    padding: 2% 7%;
+}
+
+.page3-l{
+    height: 100%;
+    width: 50%;
+    padding: 10% 10%;
+    line-height: 1.4;
+}
+
+.mys{
+    font-size: 3.5rem;
+    
+    word-spacing: 6px;
+    font-weight: 400;
+   
+}
+
+.subline3{
+    letter-spacing: 1.5px;
+    width: 200%;
+    font-size: medium;
+    margin-left: -7%;
+    color:rgb(168 34 34);
+}
+.page3-ld{
+    margin-top: 20%;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+    color: #607d8b;
+}
+
+.page3-ld li{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.page3-r{
+    height: 100%;
+    width: 50%;
+    padding: 5% 5%;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+}
+/*
+.page3-rl{
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 10px;
+    
+}
+*/
+
+
+ 
+.r-pic{
+    height: 8rem;
+    width: 8rem;
+    padding: 15% 15%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+ 
+    min-height: 1px;
+    padding-right: 15px;
+
+}
+.r-dis{
+    text-align: center;
+    color: #607d8b;
+    width: 7em;
+    justify-items: center;
+    align-items: center;
+}
+
+
+/*
+page4 test
+*/
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.imgbx{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* we put img to test*/
+/*
+#image4{
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+*/
+.get{
+    width: 70%;
+    height: 80%;
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    margin-top: -10%;
+    letter-spacing: 2px;
+    
+}
+/*
+.get-in{
+    
+}
+*/
+.get-in-h{
+    word-spacing: 6px;
+    font-weight: 400;
+    font-size: 300%;
+    margin-bottom: 10%;
+    
+    margin-left: 15%;
+}
+
+.get-in-p{
+    margin-top: 0;
+    margin-right: -5%;
+    line-height: 1.5rem;
+    letter-spacing: 1.7px;
+    word-spacing: 2px;
+    color: #607d8b;
+
+}
+
+
+
+.contentbx{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+.formbx{
+    width: 50%;
+}
+.formbx h2{
+    
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #1599db;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+
+.inputbx{
+    margin-bottom: 20px;
+}
+.inputbx span{
+    font-size: 1rem;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: #607d8b;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.inputbx input{
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    font-weight: 400;
+    border: 1px solid #607d8b;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    color: #607d8b;
+    background: transparent;
+    border-radius: 30px;
+}
+.inputbx input[type="submit"]{
+    background: #f06c96;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+.inputbx input[type="submit"]:hover{
+    background: #f53677;
+}
+.remember{
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #607d8b;
+}
+.inputbx p{
+    color:#607d8b ;
+}
+.inputbx p a{
+    color: #ff4584;
+    
+}
+.formbx h3{
+    color: #607d8b;
+    text-align: center;
+    margin: 80px 0px 10px;
+    font-weight: 500;
+}
+.formbx .sci{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formbx .sci img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    
+}
+.formbx .sci li{
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    margin: 0 8px;
+    background: #1599db;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+
